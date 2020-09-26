@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+
 	. "github.com/logrusorgru/aurora"
 )
 
 func printKeyValue(l yamlLine) {
-	fmt.Printf("%v: %v\n", BrightRed(l.key), Yellow(l.value))
+	fmt.Printf("%v: %v\n", Magenta(l.key), Green(l.value))
 }
 
 func printKeyNumberOrIP(l yamlLine) {
